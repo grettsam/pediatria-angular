@@ -1,0 +1,17 @@
+.search {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    & .input-group {
+        width: 30%;
+    }
+}
+
+@media (max-width:991px) {
+    .search {
+        margin-top: 70px;
+        & .input-group {
+            width: 100%;
+        }
+    }
+}

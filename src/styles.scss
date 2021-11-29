@@ -1,0 +1,82 @@
+/* You can add global styles to this file, and also import other style files */
+
+//Color
+$color-prim-claro: #00bcfc;
+$color-prim-oscuro: #0086cf;
+$color-secu-claro: #ffe200;
+$color-secu-oscuro: #ff3300;
+$color-claro: #ffffff;
+$color-semioscuro: #e2e2e2;
+$color-oscuro: #444444;
+//Color-text
+.color-primario-a {
+    color: $color-prim-claro;
+}
+
+.color-primario-b {
+    color: $color-prim-oscuro;
+}
+
+.color-secundario-a {
+    color: $color-secu-claro;
+}
+
+.color-secundario-b {
+    color: $color-secu-oscuro;
+}
+
+//Background
+.background-primario-a {
+    background: $color-prim-claro;
+}
+
+.background-primario-b {
+    background: $color-prim-oscuro;
+}
+
+.background-secundario-a {
+    background: $color-secu-claro;
+}
+
+.background-secundario-b {
+    background: $color-secu-oscuro;
+}
+
+//Button
+.button-primario {
+    background-color: $color-prim-claro;
+    border: 2px solid $color-prim-claro;
+    color: $color-oscuro;
+    font-weight: 600;
+    &:hover {
+        // background-color: transparent;
+        // color: $color-prim-claro;
+        color: $color-claro;
+    }
+}
+
+.button-alternativo {
+    background-color: $color-prim-oscuro;
+    border: 2px solid $color-prim-oscuro;
+    color: $color-claro;
+    font-weight: 600;
+    &:hover {
+        background-color: transparent;
+        color: $color-prim-oscuro;
+    }
+}
+
+.button-secundario {
+    background-color: $color-secu-oscuro;
+    border: 2px solid $color-secu-oscuro;
+    color: $color-claro;
+    font-weight: 600;
+    &:hover {
+        background-color: transparent;
+        color: $color-secu-oscuro;
+    }
+}
+
+body {
+    background-color: $color-semioscuro;
+}

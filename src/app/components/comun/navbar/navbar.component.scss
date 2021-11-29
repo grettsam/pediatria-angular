@@ -1,0 +1,10 @@
+.dropdown-menu {
+    border: none;
+}
+
+.desk-menu {
+    & .dropdown-menu {
+        position: absolute;
+        z-index: 9999;
+    }
+}
