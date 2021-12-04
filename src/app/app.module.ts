@@ -1,13 +1,15 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
+
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/comun/navbar/navbar.component';
 import { GeneralComponent } from './components/comun/general/general.component';
 import { FooterComponent } from './components/comun/footer/footer.component';
 import { SearchComponent } from './components/comun/search/search.component';
 import { HomeComponent } from './components/pagina/home/home.component';
+
 import { BroncopulmonarComponent } from './components/pagina/broncopulmonar/broncopulmonar.component';
 import { CardiologiaComponent } from './components/pagina/cardiologia/cardiologia.component';
 import { EndocrinologiaComponent } from './components/pagina/endocrinologia/endocrinologia.component';
@@ -27,6 +29,7 @@ import { NeumoniaComplicadaComponent } from './components/pagina/broncopulmonar/
 import { NeumoniaRecurrenteComponent } from './components/pagina/broncopulmonar/neumonia-recurrente/neumonia-recurrente.component';
 import { FibrosisQuisticaComponent } from './components/pagina/broncopulmonar/fibrosis-quistica/fibrosis-quistica.component';
 import { AlteBrueComponent } from './components/pagina/broncopulmonar/alte-brue/alte-brue.component';
+import { SearchPageComponent } from './components/pagina/search-page/search-page.component';
 
 @NgModule({
   declarations: [
@@ -54,13 +57,11 @@ import { AlteBrueComponent } from './components/pagina/broncopulmonar/alte-brue/
     NeumoniaComplicadaComponent,
     NeumoniaRecurrenteComponent,
     FibrosisQuisticaComponent,
-    AlteBrueComponent
+    AlteBrueComponent,
+    SearchPageComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

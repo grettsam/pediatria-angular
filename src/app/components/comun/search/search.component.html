@@ -1,6 +1,15 @@
-<div class="search container">
+<form class="search container" (submit)="buscar(buscado.nombre)">
     <div class=" input-group mb-3 mt-3 d-flex justify-content-end">
-        <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
-        <button class="btn btn-outline-secondary" type="button" id="button-addon2">Buscar</button>
+
+        <input type="text" class="form-control" list="datalistOptions" placeholder="Buscar" name="elemento" (ngModelChange)="searchText(buscado.nombre)" [(ngModel)]="buscado.nombre">
+        <datalist id="datalistOptions" *ngIf="encontrados">
+           <div *ngFor="let encontrado of encontrados">
+                <option  value={{encontrado.nombre}}>
+                    <small>{{encontrado.autor}}</small>
+                </option>
+            </div>
+          </datalist>
+        <button class="btn btn-outline-secondary">Buscar</button>
+
     </div>
-</div>
+</form>

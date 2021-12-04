@@ -1,0 +1,53 @@
+<div class="resultados jumbotron jumbotron-fluid my-3">
+    <div class="container">
+        <p class="lead">Tu busqueda es "{{busqueda}}"</p>
+        <h1 class="display-5" *ngIf="autores.length==0 && temas.length==0 ">Elemento no encontrado </h1>
+        <h1 class="display-5" *ngIf="autores.length!=0 || temas.length!=0 ">Quisas estas buscando.... </h1>
+        <hr class="my-2">
+
+        <div *ngIf="autores.length>0">
+            <h4>Resultados por nombre de autor ...</h4>
+            <div *ngFor="let autor of autores">
+                <li> <b>{{autor.autor}} </b>- {{autor.nombre}}
+                    <a routerLink={{autor.ruta}}> <button>ir</button></a>
+                </li>
+            </div>
+            <hr>
+        </div>
+        <div *ngIf="temas.length>0">
+            <h4>Resultados por nombre de tema ...</h4>
+            <div *ngFor="let tema of temas">
+                <li> <b>{{tema.nombre}} </b>- {{tema.autor}}
+                    <a routerLink={{tema.ruta}}> <button>ir</button></a>
+                </li>
+            </div>
+            <hr>
+        </div>
+
+
+        <div *ngIf="autores.length==0 && temas.length==0 ">
+            <h5 class="mt-5">Mapa de temas</h5>
+
+
+
+            <div class="row">
+                <div class="col-4">
+                    <h4>Broncopulmonar</h4>
+                    <div class="list-group" *ngFor="let broncopulmonar of broncopulmonar">
+                        <a href="#" class="list-group-item list-group-item-action">{{broncopulmonar.nombre}}</a>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <h4>Cardiología</h4>
+                    <div class="list-group" *ngFor="let cardiologia of cardiologia">
+                        <a href="#" class="list-group-item list-group-item-action">{{cardiologia.nombre}}</a>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+    </div>
+</div>
