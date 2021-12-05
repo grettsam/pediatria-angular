@@ -1,1 +1,21 @@
-<p>cardiologia works!</p>
+<div class="row  mx-auto">
+    <div class="col-md-3">
+        <ul>
+            <a routerLink="/cardiologia/electrocardiograma-pediatrico">
+                <li>Interpretación simplificada del electrocardiograma Pediátrico</li>
+            </a>
+            <a routerLink="/cardiologia/cardiopatias-congenitas">
+                <li>Cardiopatías Congénitas</li>
+            </a>
+            <a routerLink="/cardiologia/insuficiencia-cardiaca">
+                <li>Insuficiencia cardiaca en pediatría</li>
+            </a>
+            <a routerLink="/cardiologia/shock-cardiogenico">
+                <li>Shock Cardiogénico</li>
+            </a>
+        </ul>
+    </div>
+    <div class="col-md-9 mb-5">
+        <router-outlet></router-outlet>
+    </div>
+</div>

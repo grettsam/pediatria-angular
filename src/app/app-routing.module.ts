@@ -10,6 +10,10 @@ import { NeumoniaComplicadaComponent } from './components/pagina/broncopulmonar/
 import { NeumoniaRecurrenteComponent } from './components/pagina/broncopulmonar/neumonia-recurrente/neumonia-recurrente.component';
 import { OxigenoterapiaComponent } from './components/pagina/broncopulmonar/oxigenoterapia/oxigenoterapia.component';
 import { CardiologiaComponent } from './components/pagina/cardiologia/cardiologia.component';
+import { CardiopatiasCongenitasComponent } from './components/pagina/cardiologia/cardiopatias-congenitas/cardiopatias-congenitas.component';
+import { ElectrocardiogramaPediatricaComponent } from './components/pagina/cardiologia/electrocardiograma-pediatrica/electrocardiograma-pediatrica.component';
+import { InsuficienciaCardiacaComponent } from './components/pagina/cardiologia/insuficiencia-cardiaca/insuficiencia-cardiaca.component';
+import { ShockCardiogenicoComponent } from './components/pagina/cardiologia/shock-cardiogenico/shock-cardiogenico.component';
 import { EndocrinologiaComponent } from './components/pagina/endocrinologia/endocrinologia.component';
 import { GastroenterologiaComponent } from './components/pagina/gastroenterologia/gastroenterologia.component';
 import { GeneticaComponent } from './components/pagina/genetica/genetica.component';
@@ -57,7 +61,28 @@ const routes: Routes = [
       },
     ],
   },
-  { path: 'cardiologia', component: CardiologiaComponent },
+  {
+    path: 'cardiologia',
+    component: CardiologiaComponent,
+    children: [
+      {
+        path: 'electrocardiograma-pediatrico',
+        component: ElectrocardiogramaPediatricaComponent,
+      },
+      {
+        path: 'cardiopatias-congenitas',
+        component: CardiopatiasCongenitasComponent,
+      },
+      {
+        path: 'insuficiencia-cardiaca',
+        component: InsuficienciaCardiacaComponent,
+      },
+      {
+        path: 'shock-cardiogenico',
+        component: ShockCardiogenicoComponent,
+      },
+    ],
+  },
   { path: 'endocrinologia', component: EndocrinologiaComponent },
   { path: 'gastroenterologia', component: GastroenterologiaComponent },
   { path: 'genetica', component: GeneticaComponent },

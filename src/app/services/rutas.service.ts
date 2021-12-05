@@ -92,25 +92,25 @@ export class RutasService {
     {
       general: 'cardiologia',
       nombre: 'Interpretación simplificada del electrocardiograma Pediátrico',
-      ruta: '',
-      autor: [],
+      ruta: '/cardiologia/electrocardiograma-pediatrico',
+      autor: ['Equipo Cardiología Pediátrica'],
     },
     {
       general: 'cardiologia',
       nombre: 'Cardiopatías Congénitas',
-      ruta: '',
+      ruta: '/cardiologia/cardiopatias-congenitas',
       autor: [],
     },
     {
       general: 'cardiologia',
       nombre: 'Insuficiencia cardiaca en pediatría',
-      ruta: '',
+      ruta: '/cardiologia/insuficiencia-cardiaca',
       autor: [],
     },
     {
       general: 'cardiologia',
       nombre: 'Shock Cardiogénico',
-      ruta: '',
+      ruta: '/cardiologia/shock-cardiogenico',
       autor: [],
     },
   ];

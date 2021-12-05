@@ -30,6 +30,10 @@ import { NeumoniaRecurrenteComponent } from './components/pagina/broncopulmonar/
 import { FibrosisQuisticaComponent } from './components/pagina/broncopulmonar/fibrosis-quistica/fibrosis-quistica.component';
 import { AlteBrueComponent } from './components/pagina/broncopulmonar/alte-brue/alte-brue.component';
 import { SearchPageComponent } from './components/pagina/search-page/search-page.component';
+import { ElectrocardiogramaPediatricaComponent } from './components/pagina/cardiologia/electrocardiograma-pediatrica/electrocardiograma-pediatrica.component';
+import { CardiopatiasCongenitasComponent } from './components/pagina/cardiologia/cardiopatias-congenitas/cardiopatias-congenitas.component';
+import { InsuficienciaCardiacaComponent } from './components/pagina/cardiologia/insuficiencia-cardiaca/insuficiencia-cardiaca.component';
+import { ShockCardiogenicoComponent } from './components/pagina/cardiologia/shock-cardiogenico/shock-cardiogenico.component';
 
 @NgModule({
   declarations: [
@@ -59,6 +63,10 @@ import { SearchPageComponent } from './components/pagina/search-page/search-page
     FibrosisQuisticaComponent,
     AlteBrueComponent,
     SearchPageComponent,
+    ElectrocardiogramaPediatricaComponent,
+    CardiopatiasCongenitasComponent,
+    InsuficienciaCardiacaComponent,
+    ShockCardiogenicoComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
