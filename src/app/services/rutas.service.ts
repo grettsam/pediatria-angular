@@ -99,19 +99,19 @@ export class RutasService {
       general: 'cardiologia',
       nombre: 'Cardiopatías Congénitas',
       ruta: '/cardiologia/cardiopatias-congenitas',
-      autor: [],
+      autor: ['Equipo Cardiología infantil'],
     },
     {
       general: 'cardiologia',
       nombre: 'Insuficiencia cardiaca en pediatría',
       ruta: '/cardiologia/insuficiencia-cardiaca',
-      autor: [],
+      autor: ['Alejandro Álvarez Jara'],
     },
     {
       general: 'cardiologia',
       nombre: 'Shock Cardiogénico',
       ruta: '/cardiologia/shock-cardiogenico',
-      autor: [],
+      autor: ['Rodrigo Escobar'],
     },
   ];
 
