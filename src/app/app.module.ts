@@ -34,6 +34,11 @@ import { ElectrocardiogramaPediatricaComponent } from './components/pagina/cardi
 import { CardiopatiasCongenitasComponent } from './components/pagina/cardiologia/cardiopatias-congenitas/cardiopatias-congenitas.component';
 import { InsuficienciaCardiacaComponent } from './components/pagina/cardiologia/insuficiencia-cardiaca/insuficiencia-cardiaca.component';
 import { ShockCardiogenicoComponent } from './components/pagina/cardiologia/shock-cardiogenico/shock-cardiogenico.component';
+import { SiadhComponent } from './components/pagina/endocrinologia/siadh/siadh.component';
+import { DiabetesInsipidaComponent } from './components/pagina/endocrinologia/diabetes-insipida/diabetes-insipida.component';
+import { HipoglicemiaComponent } from './components/pagina/endocrinologia/hipoglicemia/hipoglicemia.component';
+import { HiperplasiaSuprarrenalComponent } from './components/pagina/endocrinologia/hiperplasia-suprarrenal/hiperplasia-suprarrenal.component';
+import { SaludOseaComponent } from './components/pagina/endocrinologia/salud-osea/salud-osea.component';
 
 @NgModule({
   declarations: [
@@ -67,6 +72,11 @@ import { ShockCardiogenicoComponent } from './components/pagina/cardiologia/shoc
     CardiopatiasCongenitasComponent,
     InsuficienciaCardiacaComponent,
     ShockCardiogenicoComponent,
+    SiadhComponent,
+    DiabetesInsipidaComponent,
+    HipoglicemiaComponent,
+    HiperplasiaSuprarrenalComponent,
+    SaludOseaComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],

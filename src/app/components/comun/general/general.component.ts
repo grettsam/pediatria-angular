@@ -5,8 +5,9 @@ interface datos {
   nombre: string;
   url: string;
   icon?: string;
+  svg?: string;
 }
-// TODO buscar un icono por cada uno de los generales
+
 @Component({
   selector: 'app-general',
   templateUrl: './general.component.html',
@@ -14,21 +15,57 @@ interface datos {
 })
 export class GeneralComponent implements OnInit {
   generales: Array<datos> = [
-    { id: 1, nombre: 'BRONCOPULMONAR', url: '/broncopulmonar' },
-    { id: 2, nombre: 'CARDIOLOGÍA', url: '/cardiologia' },
-    { id: 3, nombre: 'ENDOCRINOLOGÍA', url: '/endocrinologia' },
-    { id: 4, nombre: 'GASTROENTEROLOGÍA', url: '/gastroenterologia' },
-    { id: 5, nombre: 'GENETICA', url: '/genetica' },
-    { id: 6, nombre: 'INFECTOLOGÍA', url: '/infectologia' },
+    {
+      id: 1,
+      nombre: 'BRONCOPULMONAR',
+      url: '/broncopulmonar',
+      icon: 'fas fa-lungs',
+    },
+    {
+      id: 2,
+      nombre: 'CARDIOLOGÍA',
+      url: '/cardiologia',
+      icon: 'fas fa-heartbeat',
+    },
+    {
+      id: 3,
+      nombre: 'ENDOCRINOLOGÍA',
+      url: '/endocrinologia',
+      svg: '../assets/icon/endocrinologia.svg',
+    },
+    {
+      id: 4,
+      nombre: 'GASTROENTEROLOGÍA',
+      url: '/gastroenterologia',
+      svg: '../assets/icon/estomago.svg',
+    },
+    { id: 5, nombre: 'GENETICA', url: '/genetica', icon: 'fas fa-dna' },
+    {
+      id: 6,
+      nombre: 'INFECTOLOGÍA',
+      url: '/infectologia',
+      icon: 'fas fa-head-side-mask',
+    },
     {
       id: 7,
       nombre: 'INMUNOLOGÍA Y REUMATOLOGÍA',
       url: '/inmunologia-y-reumatologia',
+      icon: 'fas fa-shield-virus',
     },
-    { id: 8, nombre: 'NEFROLOGÍA', url: '/nefrologia' },
-    { id: 9, nombre: 'NEUROLOGÍA', url: '/neurologia' },
-    { id: 10, nombre: 'NUTRICIÓN', url: '/nutricion' },
-    { id: 11, nombre: 'PSIQUIATRÍA', url: '/psiquiatria' },
+    {
+      id: 8,
+      nombre: 'NEFROLOGÍA',
+      url: '/nefrologia',
+      svg: '../assets/icon/rinon.svg',
+    },
+    { id: 9, nombre: 'NEUROLOGÍA', url: '/neurologia', icon: 'fas fa-brain' },
+    { id: 10, nombre: 'NUTRICIÓN', url: '/nutricion', icon: 'fas fa-utensils' },
+    {
+      id: 11,
+      nombre: 'PSIQUIATRÍA',
+      url: '/psiquiatria',
+      svg: '../assets/icon/psico.svg',
+    },
   ];
 
   constructor() {}

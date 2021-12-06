@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { SearchComponent } from './components/comun/search/search.component';
 import { AlteBrueComponent } from './components/pagina/broncopulmonar/alte-brue/alte-brue.component';
 import { AsmaBronquialComponent } from './components/pagina/broncopulmonar/asma-bronquial/asma-bronquial.component';
 import { BroncopulmonarComponent } from './components/pagina/broncopulmonar/broncopulmonar.component';
@@ -14,7 +13,12 @@ import { CardiopatiasCongenitasComponent } from './components/pagina/cardiologia
 import { ElectrocardiogramaPediatricaComponent } from './components/pagina/cardiologia/electrocardiograma-pediatrica/electrocardiograma-pediatrica.component';
 import { InsuficienciaCardiacaComponent } from './components/pagina/cardiologia/insuficiencia-cardiaca/insuficiencia-cardiaca.component';
 import { ShockCardiogenicoComponent } from './components/pagina/cardiologia/shock-cardiogenico/shock-cardiogenico.component';
+import { DiabetesInsipidaComponent } from './components/pagina/endocrinologia/diabetes-insipida/diabetes-insipida.component';
 import { EndocrinologiaComponent } from './components/pagina/endocrinologia/endocrinologia.component';
+import { HiperplasiaSuprarrenalComponent } from './components/pagina/endocrinologia/hiperplasia-suprarrenal/hiperplasia-suprarrenal.component';
+import { HipoglicemiaComponent } from './components/pagina/endocrinologia/hipoglicemia/hipoglicemia.component';
+import { SaludOseaComponent } from './components/pagina/endocrinologia/salud-osea/salud-osea.component';
+import { SiadhComponent } from './components/pagina/endocrinologia/siadh/siadh.component';
 import { GastroenterologiaComponent } from './components/pagina/gastroenterologia/gastroenterologia.component';
 import { GeneticaComponent } from './components/pagina/genetica/genetica.component';
 import { HomeComponent } from './components/pagina/home/home.component';
@@ -83,7 +87,32 @@ const routes: Routes = [
       },
     ],
   },
-  { path: 'endocrinologia', component: EndocrinologiaComponent },
+  {
+    path: 'endocrinologia',
+    component: EndocrinologiaComponent,
+    children: [
+      {
+        path: 'siadh',
+        component: SiadhComponent,
+      },
+      {
+        path: 'diabetes-insipida',
+        component: DiabetesInsipidaComponent,
+      },
+      {
+        path: 'hipoglicemia',
+        component: HipoglicemiaComponent,
+      },
+      {
+        path: 'hiperplasia-suprarrenal',
+        component: HiperplasiaSuprarrenalComponent,
+      },
+      {
+        path: 'salud-osea',
+        component: SaludOseaComponent,
+      },
+    ],
+  },
   { path: 'gastroenterologia', component: GastroenterologiaComponent },
   { path: 'genetica', component: GeneticaComponent },
   { path: 'infectologia', component: InfectologiaComponent },

@@ -5,7 +5,6 @@ import { Temas } from '../interfaces/temas';
   providedIn: 'root',
 })
 export class RutasService {
-
   nombre: any[] = [];
   autor: any[] = [];
 
@@ -113,6 +112,42 @@ export class RutasService {
       ruta: '/cardiologia/shock-cardiogenico',
       autor: ['Rodrigo Escobar'],
     },
+    {
+      nombre: 'endocrinologia',
+      ruta: '/endocrinologia',
+      autor: [],
+    },
+    {
+      general: 'endocrinologia',
+      nombre:
+        'Síndrome de secreción inadecuada de la hormona antidiurética (SIADH)',
+      ruta: '/endocrinologia/siadh',
+      autor: [],
+    },
+    {
+      general: 'endocrinologia',
+      nombre: 'Diabetes Insípida',
+      ruta: '/endocrinologia/diabetes-insipida',
+      autor: [],
+    },
+    {
+      general: 'endocrinologia',
+      nombre: 'Hipoglicemia',
+      ruta: '/endocrinologia/hipoglicemia',
+      autor: [],
+    },
+    {
+      general: 'endocrinologia',
+      nombre: 'Hiperplasia suprarrenal congénita por déficit 21-hidroxilasa',
+      ruta: '/endocrinologia/hiperplasia-suprarrenal',
+      autor: [],
+    },
+    {
+      general: 'endocrinologia',
+      nombre: 'Salud ósea en paciente pediátrico con necesidades especiales en salud',
+      ruta: '/endocrinologia/salud-osea',
+      autor: [],
+    },
   ];
 
   buscado(valor: string) {
@@ -124,6 +159,6 @@ export class RutasService {
         }
       });
     });
-    return this.autor
+    return this.autor;
   }
 }

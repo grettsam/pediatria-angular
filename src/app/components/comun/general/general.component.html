@@ -1,3 +1,7 @@
 <a routerLink="{{general.url}}" *ngFor="let general of generales">
-    <button class="button-general btn button-primario my-2">{{general.nombre}}</button>
+    <button class="button-general btn button-primario my-2">
+        <i *ngIf="general.icon" class={{general.icon}}></i> 
+        <img  *ngIf="general.svg" src={{general.svg}} />
+        <div>{{general.nombre}}</div>
+    </button>
 </a>

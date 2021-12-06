@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ShockCardiogenicoComponent } from './shock-cardiogenico.component';
+import { HipoglicemiaComponent } from './hipoglicemia.component';
 
-describe('ShockCardiogenicoComponent', () => {
-  let component: ShockCardiogenicoComponent;
-  let fixture: ComponentFixture<ShockCardiogenicoComponent>;
+describe('HipoglicemiaComponent', () => {
+  let component: HipoglicemiaComponent;
+  let fixture: ComponentFixture<HipoglicemiaComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ShockCardiogenicoComponent ]
+      declarations: [ HipoglicemiaComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ShockCardiogenicoComponent);
+    fixture = TestBed.createComponent(HipoglicemiaComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
